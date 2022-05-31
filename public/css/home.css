@@ -1,0 +1,472 @@
+* {
+    margin: auto;
+    width: 100%;
+}
+
+body {
+    background: #f8fafc;
+}
+
+select {
+    width: 50%;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    background-color: #2d5eff15;
+    box-sizing: border-box;
+    transition: 1s;
+    font-size: 25px; 
+    font-family: 'Nunito-Light'; 
+}
+
+select:focus{
+    border-color: #2d5eff;
+    box-shadow: 0 0 8px 0 #2d5eff;
+}
+
+::selection {
+    background: #5871c494;
+}
+
+::-moz-selection {
+    background: #5871c494;
+}
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #cacaca6b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d5eff;
+  border-radius: 10px;
+}
+
+input{
+    width: 50%;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    background-color: #2d5eff15;
+    box-sizing: border-box;
+    transition: 1s;
+    font-size: 25px; 
+    font-family: 'Nunito-Light'; 
+}
+  
+input:focus{
+    border-color: #2d5eff;
+    box-shadow: 0 0 8px 0 #2d5eff;
+}
+
+label {
+    font-size: 35px; 
+    font-family: 'Nunito-Light'; 
+}
+
+@font-face {
+	font-family: 'Nunito-Light'; 
+	src: local('Nunito-Light'),
+    url(../fonts/Nunito-Light.ttf); 
+}
+
+@font-face {
+	font-family: 'Nunito-Medium'; 
+	src: local('Nunito-Medium'),
+    url(../fonts/Nunito-Medium.ttf); 
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a:active,
+a {
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.header {
+    padding: 1% 0% 1% 0%;
+    background: #282828;
+}
+
+.header_navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.header_logo {
+    margin-right: 10%;
+    width: 22%;
+}
+
+.header_navi_txt {
+    display: flex;
+}
+
+.b1 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Nunito-Light';
+}
+
+.b1:hover {
+    color: #2d5eff;
+    transition-duration: 0.5s;
+}
+
+.b5 {
+    color: #2d5eff;
+}
+
+.ankets_zag {
+    text-align: center;
+    font-family: 'Nunito-Light';
+    font-size: 50px;
+    margin: 1.5% 0% 1.5% 0%;
+}
+
+.style_txt {
+    padding: 0% 0% 0% 1%;
+    font-size: 32px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.ankets_block {
+    width: 85%;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.664);
+    box-shadow: 0px 0px 20px 1px #282828;
+}
+
+.button_one {
+    margin: 1% 0% 1% 0%;
+    text-align: left;
+}
+
+.button1 {
+    border-radius: 10px;
+    color: white;
+    font-size: 27px;
+    padding: 0.5% 1% 0.5% 1%;
+    font-family: 'Nunito-Medium';
+    background-color: #2d5eff;
+    transition: 1s;
+}
+
+.button1:hover {
+    color: black;
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #2d5eff;
+}
+
+.button2 {
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    padding: 0.5% 1% 0.5% 1%;
+    font-family: 'Nunito-Medium';
+    background-color: #bb2222;
+    transition: 1s;
+    margin: 0.2% 0% 0.5% 1%;
+    text-align: center;
+}
+
+.button2:hover {
+    color: black;
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #bb2222;
+}
+
+.your_ankets {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito-Light';
+    font-size: 50px;
+    margin: 1.5% 0% 1.5% 0%;
+}
+
+.approved_img {
+    left: 5%;
+    margin-top: -3%;
+    position: absolute;
+    width: 10%;
+}
+
+.anketa_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.anketa_bg {
+    width: 85%;
+    margin: 0 0 4% 0;
+    padding: 1% 0% 2% 0%;
+    background: #2d5eff0e;
+    border-radius: 10px;
+    border: solid 1px #919191; 
+}
+
+.form_anketa {
+    display: flex;
+    font-family: 'Nunito-Light';
+    flex-direction: column;
+    align-items: center;
+}
+
+.warning {
+    display: flex;
+    width: 30%;
+    border: solid 1px #004cbe9f;
+    background-color: #0066ff4d;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    font-family: 'Nunito-Medium';
+    font-size: 30px;
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 10px;
+}
+    
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .b1 {
+    font-size: 30px;
+    }
+
+    .approved_img {
+    left: 5%;
+    margin-top: -3.5%;
+    width: 12%;
+    }
+
+    .style_txt {
+    font-size: 28px;
+    }
+
+    .button1, .button2 {
+    font-size: 22px;
+    }
+
+    .warning {
+    width: 32%;
+    font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    input, select {
+    font-size: 20px; 
+    }
+
+    label {
+    font-size: 28px;
+    }
+    
+    .b1 {
+    font-size: 23px;
+    }
+
+    .your_ankets, .ankets_zag {
+    font-size: 40px;
+    }
+
+    .approved_img {
+    left: 4%;
+    margin-top: -4%;
+    width: 14%;
+    }
+
+    .style_txt {
+    font-size: 26px;
+    }
+
+    .button1, .button2 {
+    font-size: 20px;
+    }
+
+    .warning {
+    width: 35%;
+    font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    input, select {
+    font-size: 18px; 
+    }
+
+    label {
+    font-size: 26px;
+    }
+    
+    .b1 {
+    font-size: 20px;
+    }
+
+    .header_logo {
+    margin-right: 5%;
+    width: 21%;
+    }
+
+    .your_ankets, .ankets_zag {
+    font-size: 35px;
+    }
+
+    .approved_img {
+    margin-top: -4.5%;
+    width: 16%;
+    }
+
+    .style_txt {
+    font-size: 22px;
+    }
+
+    .button1, .button2 {
+    font-size: 18px;
+    border-radius: 5px;
+    }
+    
+    .warning {
+    width: 45%;
+    font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .form {
+    display: flex;
+    align-items: center;
+    }
+    
+    input, select {
+    font-size: 14px; 
+    }
+
+    label {
+    font-size: 22px;
+    }
+    
+    .header_logo {
+    display: none;
+    }
+    
+    .b1 {
+    font-size: 14px;
+    }
+
+    .your_ankets, .ankets_zag {
+    font-size: 30px;
+    margin-bottom: 3%;
+    }
+
+    .anketa_bg {
+    margin-bottom: 5%;
+    }
+
+    .approved_img {
+    margin-top: -5%;
+    width: 20%;
+    }
+
+    .form_anketa {
+    text-align: center;
+    }
+
+    .style_txt {
+    font-size: 18px;
+    padding: 0%;
+    }
+
+    .button_one {
+    text-align: center;
+    }
+
+    .button1, .button2 {
+    font-size: 16px;
+    }
+
+    .warning {
+    width: 55%;
+    font-size: 15px;
+    }
+
+    .polit {
+    font-size: 20px; 
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    input {
+    height: 30px;
+    font-size: 12px; 
+    }
+
+    select {
+    height: 30px;
+    font-size: 12px;
+    margin: 8px 0;
+    outline: none;
+    padding: 0px; 
+    }
+
+    label {
+    font-size: 18px;
+    }
+
+    .b1 {
+    font-size: 11px;
+    }
+
+    .your_ankets, .ankets_zag {
+    font-size: 25px;
+    }
+
+    .approved_img {
+    margin-top: -5.5%;
+    width: 23%;
+    }
+
+    .style_txt {
+    font-size: 14px;
+    margin-bottom: 2%;
+    }
+
+    .button1, .button2 {
+    font-size: 13px;
+    }
+
+    .polit {
+    font-size: 17px;
+    }
+
+    .warning {
+    font-size: 14px;
+    }
+}

@@ -1,0 +1,634 @@
+* {
+    margin: auto;
+    width: 100%;
+}
+
+select {
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    background-color: #2d5eff15;
+    box-sizing: border-box;
+    transition: 1s;
+    font-size: 18px; 
+    font-family: 'Nunito-Light'; 
+}
+
+select:focus{
+    border-color: #2d5eff;
+    box-shadow: 0 0 8px 0 #2d5eff;
+}
+
+input{
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    background-color: #2d5eff15;
+    box-sizing: border-box;
+    transition: 1s;
+    font-size: 18px; 
+    font-family: 'Nunito-Light'; 
+}
+  
+input:focus{
+    border-color: #2d5eff;
+    box-shadow: 0 0 8px 0 #2d5eff;
+}
+
+body {
+    background: #f8fafc;
+}
+
+::selection {
+    background: #5871c494;
+}
+
+::-moz-selection {
+    background: #5871c494;
+}
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #cacaca6b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d5eff;
+  border-radius: 10px;
+}
+
+a:active,
+a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+@font-face {
+	font-family: 'Nunito-Light'; 
+	src: local('Nunito-Light'),
+    url(../fonts/Nunito-Light.ttf); 
+}
+
+@font-face {
+	font-family: 'Nunito-Medium'; 
+	src: local('Nunito-Medium'),
+    url(../fonts/Nunito-Medium.ttf); 
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header {
+    padding: 1% 0% 1% 0%;
+    background: #282828;
+}
+
+.header_navi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.header_logo {
+    margin-right: 10%;
+    width: 22%;
+}
+
+.header_navi_txt {
+    display: flex;
+}
+
+.b1 {
+    color: white;
+    font-size: 35px;
+    margin-right: 2%;
+    margin-left: 2%;
+    font-family: 'Nunito-Light';
+}
+
+.b11:hover {
+    color: #2d5eff;
+    transition-duration: 0.5s;
+}
+
+.b1:hover {
+    color: #2d5eff;
+    transition-duration: 0.5s;
+}
+
+.b5 {
+    color: #2d5eff;
+}
+
+.o_nas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.o_nas_zag {
+    text-align: center;
+    font-family: 'Nunito-Light';
+    font-size: 50px;
+    margin: 1.5% 0% 1.5% 0%;
+}
+
+.style_txt {
+    font-size: 30px;
+}
+
+.o_nas_block {
+    width: 85%;
+}
+
+.button2 {
+    border-radius: 10px;
+    color: white;
+    font-size: 23px;
+    padding: 1%;
+    font-family: 'Nunito-Medium';
+    background-color: #bb2222;
+    transition: 1s;
+    margin: 1%;
+    text-align: center;
+}
+
+.button1 {
+    border-radius: 10px;
+    color: white;
+    font-size: 23px;
+    padding: 1%;
+    font-family: 'Nunito-Medium';
+    background-color: #2d5eff;
+    transition: 1s;
+    margin: 1%;
+    text-align: center;
+}
+
+.button2:hover {
+    color: black;
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #bb2222;
+}
+
+.button1:hover {
+    color: black;
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #2d5eff;
+}
+
+.your_ankets, .filter_zag {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito-Light';
+    font-size: 50px;
+    margin: 1.5% 0% 1.5% 0%;
+}
+
+.approved_img {
+    left: 30%;
+    margin-top: -2.5%;
+    position: absolute;
+    width: 10%;
+}
+
+.ankets_cont {
+    display: flex;
+    text-align: center;
+}
+
+.form_anketa {
+    display: flex;
+    width: 35%;
+    margin-bottom: 3%;
+    font-family: 'Nunito-Light';
+}
+
+.anketa_bg {
+    background: #2d5eff0e;
+    border: solid 1px #919191; 
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.buttons {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+}
+
+.warning {
+    display: flex;
+    width: 30%;
+    border: solid 1px #004cbe9f;
+    background-color: #0066ff4d;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
+    font-family: 'Nunito-Medium';
+    font-size: 30px;
+    margin-top: 2%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.buttonf2 {
+    font-size: 21px;
+    margin-left: 5%;
+}
+
+.buttonf1 {
+    font-size: 20px;
+}
+
+.buttonf2:hover {
+    color: black;
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #bb2222;
+}
+
+.buttonf1:hover {
+    color: black;
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #2d5eff;
+}
+
+.filter_form {
+    width: 100%;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.label_date {
+    width: 30%;
+    margin-left: 3%;
+}
+
+.input_date {
+    width: 85%;
+}
+
+.input_name {
+    width: 85%;
+}
+
+.filter_name {
+    width: 35%;
+    text-align: center;
+}
+
+.filter_date {
+    width: 40%;
+    display: flex;
+    text-align: center;
+}
+
+.filter_checked {
+    width: 41%;
+    text-align: center;
+}
+
+.filter_button {
+    display: flex;
+    width: 20%;
+}
+
+label {
+    font-size: 22px;
+    font-family: 'Nunito-Medium';
+}
+
+.pagination {
+    text-align: center;
+    justify-content: center;
+    width: 15%;
+    font-size: 18px;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .b1 {
+    font-size: 30px;
+    }
+
+    .approved_img {
+    width: 12%;
+    }
+
+    .style_txt {
+    font-size: 26px;
+    }
+
+    .button1, .button2 {
+    padding: 2%;
+    font-size: 20px;
+    }
+
+    .filter_date {
+    width: 40%;
+    }
+
+    .filter_button {
+    width: 18%;
+    }
+
+    .input_date, .filter_select, .input_name {
+    font-size: 17px;
+    }
+
+    .buttonf1, .buttonf2 {
+    font-size: 17px;
+    }
+
+    .warning {
+    width: 32%;
+    font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .b1 {
+    font-size: 23px;
+    }
+
+    .your_ankets, .filter_zag {
+    font-size: 40px;
+    }
+
+    .form_anketa {
+    width: 45%;
+    }
+
+    .approved_img {
+    left: 24%;
+    margin-top: -3%;
+    width: 13%;
+    }
+
+    .style_txt {
+    font-size: 22px;
+    }
+
+    .button1, .button2 {
+    padding: 2%;
+    font-size: 18px;
+    }
+
+    .filters {
+    width: 70%;
+    }
+
+    .filter_date {
+    width: 45%;
+    }
+
+    .filter_button {
+    width: 22%;
+    }
+
+    .input_date, .filter_select, .input_name {
+    font-size: 15px;
+    }
+
+    .buttonf1, .buttonf2 {
+    font-size: 15px;
+    }
+
+    .warning {
+    width: 35%;
+    font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .b1 {
+    font-size: 20px;
+    }
+
+    .header_logo {
+    margin-right: 5%;
+    width: 21%;
+    }
+
+    .form_anketa {
+    width: 53%;
+    }
+
+    .approved_img {
+    left: 22%;
+    width: 14%;
+    }
+
+    .your_ankets, .filter_zag {
+    font-size: 35px;
+    }
+
+    .style_txt {
+    font-size: 18px;
+    }
+
+    .button1, .button2 {
+    font-size: 16px;
+    }
+    
+    .pagination {
+    font-size: 12px;
+    }
+
+    .filters {
+    width: 75%;
+    }
+
+    .filter_date {
+    width: 45%;
+    }
+
+    .filter_button {
+    width: 25%;
+    }
+
+    .label_date {
+    font-size: 16px;
+    }
+
+    .input_date, .filter_select, .input_name {
+    font-size: 12px;
+    }
+
+    .buttonf1, .buttonf2 {
+    border-radius: 7px;
+    font-size: 13px;
+    }
+
+    .warning {
+    width: 45%;
+    font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header_logo {
+    display: none;
+    }
+    
+    .b1 {
+    font-size: 15px;
+    }
+
+    .form_anketa {
+    width: 55%;
+    margin-bottom: 5%;
+    }
+
+    .approved_img {
+    left: 19%;
+    margin-top: -4%;
+    width: 17%;
+    }
+
+    .your_ankets, .filter_zag {
+    font-size: 28px;
+    }
+
+    .style_txt {
+    font-size: 16px;
+    }
+
+    .button1, .button2 {
+    border-radius: 5px;
+    padding: 2%;
+    font-size: 14px;
+    }
+
+    .pagination {
+    font-size: 10px;
+    }
+
+    select, input {
+    margin: 4px 0;
+    padding: 4px;
+    text-align: center;
+    }
+
+    .filters {
+    flex-direction: column;
+    text-align: center;
+    width: 75%;
+    }
+
+    .label_date {
+    font-size: 15px;
+    }
+
+    .input_date, .filter_select, .input_name {
+    font-size: 10px;
+    }
+
+    .filter_date {
+    width: 70%;
+    }
+
+    .filter_name {
+    width: 48.5%;
+    }
+
+    .filter_button {
+    width: 30%;
+    }
+
+    .buttonf1, .buttonf2 {
+    font-size: 10px;
+    }
+
+    .warning {
+    width: 55%;
+    font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .header_logo {
+    display: none;
+    }
+    
+    .b1 {
+    font-size: 11px;
+    }
+
+    .form_anketa {
+    width: 65%;
+    margin-bottom: 5%;
+    }
+
+    .approved_img {
+    left: 14%;
+    margin-top: -5%;
+    width: 19%;
+    }
+
+    .your_ankets, .filter_zag {
+    font-size: 22px;
+    }
+
+    .style_txt {
+    font-size: 14px;
+    }
+
+    .button1, .button2 {
+    padding: 2%;
+    font-size: 12px;
+    }
+
+    .pagination {
+    font-size: 8px;
+    }
+
+    select, input {
+    margin: 4px 0;
+    padding: 2px;
+    text-align: center;
+    }
+
+    .filter_date {
+    width: 75%;
+    }
+
+    .filter_button {
+    width: 35%;
+    }
+
+    .input_date, .filter_select, .input_name {
+    font-size: 8px;
+    }
+
+    .buttonf1, .buttonf2 {
+    font-size: 9px;
+    }
+
+    .label_date {
+    font-size: 13px;
+    }
+
+    .warning {
+    font-size: 14px;
+    }
+}

@@ -1,0 +1,797 @@
+* {
+    margin: auto;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8fafc;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: #5871c494;
+}
+
+::-moz-selection {
+    background: #5871c494;
+}
+
+::-webkit-scrollbar { width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #cacaca6b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d5eff;
+  border-radius: 10px;
+}
+
+@font-face {
+	font-family: 'Nunito-Light'; 
+	src: local('Nunito-Light'),
+    url(../fonts/Nunito-Light.ttf); 
+}
+
+@font-face {
+	font-family: 'Nunito-Medium'; 
+	src: local('Nunito-Medium'),
+    url(../fonts/Nunito-Medium.ttf); 
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a:active,
+a {
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 1% 0% 1% 0%;
+    width: 100%;
+    background: #282828;
+}
+
+.header_navi {
+    display: flex;
+    width: 85%;
+}
+
+.header_logo {
+    width: 20%;
+}
+
+.header_navi_txt {
+    display: flex;
+}
+
+.form_exit {
+    margin: 0% 0% 0% 1%;
+}
+
+.img_navi {
+    display: none;
+}
+
+.b1 {
+    color: white;
+    margin: 0% 1% 0% 1%;
+    font-size: 33px;
+    font-family: 'Nunito-Light';
+}
+
+.b1:hover {
+    color: #2d5eff;
+    transition-duration: 0.5s;
+}
+
+.b11:hover {
+    color: #2d5eff;
+    transition-duration: 0.5s;
+}
+
+.b5, .b55 {
+    color: #2d5eff;
+    transition-duration: 0.5s;
+}
+
+.podheader {
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    height: 850px;
+}
+
+.podheader_img {
+    position: absolute;
+    height: 850px;
+}
+
+.podheader_block {
+    width: 40%;
+    margin-right: 59%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1.5%;
+    background: rgba(255, 255, 255, 0.753);
+    box-shadow: 0px 0px 20px 1px #282828;
+    position: relative;
+}
+
+.podheader_logo {
+    width: 55%;
+}
+
+.podheader_txt {
+    width: 95%;
+    height: 99%;
+    font-size: 35px;
+    font-family: 'Nunito-Light';
+}
+
+.o_nas {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'Nunito-Light';
+}
+
+.o_nas_zag {
+    font-family: 'Nunito-Medium';
+    font-size: 45px;
+    margin: 1% 0% 1% 0%;
+
+}
+
+.o_nas_block {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.664);
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 1px #2d5eff;
+}
+
+.o_nas_txt {
+    width: 95%;
+    height: 90%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: left;
+    font-size: 35px;
+}
+
+.abonement {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.abonement_zag {
+    font-family: 'Nunito-Medium';
+    font-size: 45px;
+    margin: 1% 0% 1% 0%;
+}
+
+.abonement_one_block {
+    display: flex;
+    width: 80%;
+    margin-bottom: 2%;
+}
+
+.abonement_two_block {
+    display: flex;
+    width: 80%;
+}
+
+.abonement_one {
+    position: relative;
+    margin: 0% 2% 0% 0%;
+    cursor: pointer;
+}
+
+.abonement_two {
+    margin: 0% 0% 0% 2%;
+    position: relative;
+    cursor: pointer;
+}
+
+.abonement_three {
+    position: relative;
+    margin: 0% 2% 0% 0%;
+    cursor: pointer;
+}
+
+.abonement_four {
+    margin: 0% 0% 0% 2%;
+    position: relative;
+    cursor: pointer;
+}
+
+.abonement_img1, .abonement_img2, .abonement_img3, .abonement_img4 {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px #2d5eff;
+}
+
+.abonement_txt1, .abonement_txt2, .abonement_txt3, .abonement_txt4 {
+    width: 95%;
+    color: white;
+    font-size: 35px;
+    font-family: 'Nunito-Medium';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.abonement_button1, .abonement_button2, .abonement_button3, .abonement_button4 {
+    border-radius: 10px;
+    width: 35%;
+    color: white;
+    font-size: 25px;
+    padding: 1% 0% 1% 0%;
+    font-family: 'Nunito-Medium';
+    background-color: #2d5eff;
+    transition: all 800ms ease; 
+}
+
+.abonement_button1:hover {
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #2d5eff;
+}
+
+.abonement_button2:hover {
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #2d5eff;
+}
+
+.abonement_button3:hover {
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #2d5eff;
+}
+
+.abonement_button4:hover {
+    background: rgba(0,0,0,0);
+    box-shadow: inset 0 0 0 3px #2d5eff;
+}
+
+.treners {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.trener_zag {
+    font-family: 'Nunito-Medium';
+    font-size: 45px;
+    margin: 1% 0% 1% 0%;
+}
+
+.trener_blocks {
+    display: flex;
+    width: 84.2%;
+}
+
+.trener_one {
+    display: flex;
+}
+
+.trener_two {
+    display: flex;
+}
+
+.fio1, .fio2, .fio3, .fio4 {
+    width: 40%;
+    font-family: 'Nunito-Medium';
+    font-size: 35px;
+    background: rgba(255, 255, 255, 0.664);
+    box-shadow: 0px 0px 20px 1px #282828;
+}
+
+.photo {
+    width: 100%;
+    position: relative;
+}
+
+.photo:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 0; right: 0; bottom: 0px;
+    z-index: 1;
+    background: #000000be;
+    color: #fff;
+    text-align: center;
+    font-family: Nunito-Medium;
+    font-size: 60%;
+    padding: 2%;
+}
+
+.contact {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contact_zag {
+    font-family: 'Nunito-Medium';
+    font-size: 45px;
+    margin: 1% 0% 1% 0%;
+}
+
+.contact_content {
+    display: flex;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.664);
+    box-shadow: 0px 0px 20px 1px #2d5eff;
+    margin-bottom: 5%;
+}
+
+.contact_info {
+    font-family: 'Nunito-Light';
+    font-size: 35px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 0% 1% 0%;
+    background: #282828;
+}
+
+.ceti {
+    display: flex;
+    width: 15%;
+    height: 15%;
+}
+
+.c1:hover {
+    transform: scale(1.3);
+}
+
+.c2:hover {
+    transform: scale(1.3);
+}
+
+.c3:hover {
+    transform: scale(1.3);
+}
+
+.c4:hover {
+    transform: scale(1.3);
+}
+
+
+.c2 {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.c3 {
+    margin-right: 6%;
+}
+
+.polit {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Nunito-Light';
+}
+
+@media only screen and (max-width: 1500px) {
+    .b1 { 
+    font-size: 30px;
+    }
+    
+    .o_nas_txt {
+    font-size: 30px;
+    }
+
+    .abonement_button1, .abonement_button2, .abonement_button3, .abonement_button4 {
+    width: 50%;
+    font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .b1 {
+    font-size: 28px;
+    }
+    
+    .podheader {
+    width: 90%;
+    }
+
+    .podheader_block {
+    margin-right: 54%;
+    }
+
+    .podheader_txt {
+    font-size: 34px;
+    }
+    
+    .o_nas_txt {
+    font-size: 26px;
+    }
+
+    .abonement_txt1, .abonement_txt2, .abonement_txt3, .abonement_txt4 {
+    font-size: 30px;
+    }
+
+    .abonement_button1, .abonement_button2, .abonement_button3, .abonement_button4 {
+    width: 45%;
+    font-size: 20px;
+    }
+
+    .fio1, .fio2, .fio3, .fio4 {
+    font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .header_logo {
+    width: 18%;
+    }
+
+    .b1 {
+    font-size: 22px;
+    }
+    
+    .podheader_img {
+    position: absolute;
+    height: 600px;
+    }
+
+    .podheader {
+    width: 100%;
+    height: 600px;
+    }
+
+    .podheader_block {
+    margin-right: 50%;
+    }
+
+    .podheader_txt {
+    font-size: 25px;
+    }
+    
+    .o_nas_txt {
+    font-size: 22px;
+    }
+
+    .abonement_txt1, .abonement_txt2, .abonement_txt3, .abonement_txt4 {
+    font-size: 25px;
+    }
+
+    .abonement_button1, .abonement_button2, .abonement_button3, .abonement_button4 {
+    width: 50%;
+    font-size: 18px;
+    }
+
+    .fio1, .fio2, .fio3, .fio4 {
+    font-size: 28px;
+    }
+
+    .contact_info {
+    font-size: 27px;
+    }
+
+    .ceti {
+    width: 20%;
+    height: 20%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .header_logo {
+    margin-right: 3%;
+    width: 40%;
+    }
+    
+    .button_hide {  
+    display: none;
+    }
+
+    .bh {
+    display: none;
+    }
+
+    .img_navi {
+    display: flex;
+    width: 40%;
+    }
+
+    .form_exit {
+    display: flex;
+    align-items: center;
+    }
+
+    .o_nas_zag, .abonement_zag, .trener_zag, .contact_zag {
+    font-size: 30px;
+    }
+
+    .podheader {
+    width: 100%;
+    height: 400px;
+    }
+
+    .podheader_img {
+    position: absolute;
+    height: 400px;
+    }
+
+    .podheader_block {
+    margin-right: 50%;
+    }
+
+    .podheader_txt {
+    font-size: 21px;
+    }
+    
+    .o_nas_txt {
+    font-size: 18px;
+    }
+
+    .abonement_txt1, .abonement_txt2, .abonement_txt3, .abonement_txt4 {
+    font-size: 22px;
+    }
+
+    .abonement_button1, .abonement_button2, .abonement_button3, .abonement_button4 {
+    width: 50%;
+    border-radius: 7px;
+    font-size: 15px;
+    }
+
+    .fio1, .fio2, .fio3, .fio4 {
+    font-size: 20px;
+    }
+
+    .photo:hover::after {
+    display: none;
+    }
+
+    .contact_info {
+    font-size: 22px;
+    }
+
+    .contact_cart {
+    height: 250px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .header_logo {
+    margin-right: 2%;
+    width: 30%;
+    }
+
+    .podheader {
+    width: 100%;
+    height: 350px;
+    }
+
+    .podheader_img {
+    position: absolute;
+    height: 350px;
+    }
+
+    .podheader_block {
+    width: 45%;
+    margin-right: 45%;
+    }
+
+    .podheader_logo {
+    width: 40%;
+    }
+
+    .podheader_txt {
+    font-size: 18px;
+    }
+
+    .abonement_zag {
+    margin: 2% 0% 2% 0%;
+    }
+
+    .abonement_one_block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    }
+
+    .abonement_two_block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+    }
+
+    .abonement_one, .abonement_three {
+    margin: 0% 0% 0% 0%;
+    }
+
+    .abonement_two, .abonement_four {
+    margin: 4% 0% 0% 0%;
+    }
+
+    .abonement_txt1, .abonement_txt2, .abonement_txt3, .abonement_txt4 {
+    font-size: 28px;
+    }
+
+    .abonement_button1, .abonement_button2, .abonement_button3, .abonement_button4 {
+    width: 45%;
+    font-size: 20px;
+    }
+
+    .trener_zag {
+    margin: 0% 0% 2% 0%;
+    }
+
+    .trener_blocks {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    }
+
+    .trener_one {
+    display: flex;
+    margin-bottom: 5%;
+    }
+
+    .trener_two {
+    display: flex;
+    }
+
+    .fio2, .fio4 {
+    width: 48%;
+    font-size: 23px;
+    }
+
+    .fio1, .fio3 {
+    width: 48%;
+    font-size: 23px;
+    margin-right: 5%
+    }
+
+    .contact_zag {
+    margin: 2% 0% 2% 0%;
+    }
+
+    .contact_content {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .contact_info {
+    font-size: 23px;
+    }
+
+    .contact_cart {
+    height: 250px;
+    }
+
+    .ceti {
+    width: 30%;
+    height: 30%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header_logo {
+    width: 28%;
+    }
+
+    .o_nas_zag, .abonement_zag, .trener_zag, .contact_zag {
+    font-size: 25px;
+    }
+    
+    .podheader {
+    height: 280px;
+    }
+
+    .podheader_img {
+    height: 280px;
+    }
+
+    .podheader_block {
+    width: 50%;
+    margin-right: 40%;
+    }
+
+    .podheader_txt {
+    font-size: 15px;
+    }
+
+    .o_nas_txt {
+    font-size: 15px;
+    }
+
+    .abonement_txt1, .abonement_txt2, .abonement_txt3, .abonement_txt4 {
+    font-size: 25px;
+    }
+
+    .abonement_button1, .abonement_button2, .abonement_button3, .abonement_button4 {
+    width: 55%;
+    }
+
+    .fio1, .fio2, .fio3, .fio4 {
+    font-size: 22px;
+    }
+
+    .contact_info {
+    font-size: 20px;
+    }
+
+    .contact_cart {
+    height: 250px;
+    }
+
+    .ceti {
+    width: 35%;
+    height: 35%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .header_logo {
+    display: none;
+    }
+
+    .podheader_img {
+    height: 220px;
+    }
+
+    .podheader {
+    height: 220px;
+    }
+
+    .podheader_txt {
+    font-size: 13px;
+    }
+
+    .o_nas_txt {
+    font-size: 12px;
+    }
+
+    .abonement_txt1, .abonement_txt2, .abonement_txt3, .abonement_txt4 {
+    font-size: 18px;
+    }
+
+    .abonement_button1, .abonement_button2, .abonement_button3, .abonement_button4 {
+    width: 55%;
+    font-size: 15px;
+    }
+
+    .fio1, .fio2, .fio3, .fio4 {
+    font-size: 18px;
+    }
+
+    .contact_info {
+    font-size: 18px;
+    }
+
+    .contact_cart {
+    height: 200px;
+    }
+
+    .ceti {
+    width: 40%;
+    height: 40%;
+    }
+
+    .b1 {
+    font-size: 20px;
+    }
+}
